@@ -10,10 +10,10 @@ Ce dépôt contient un squelette pour un projet *OracleXE* et *ADF*.
   - [Utilisatation](#utilisatation)
 - [Application](#application)
   - [Composition](#composition-1)
-- [Docker](#docker)
-  - [Installation](#installation)
-  - [Utilisation](#utilisation)
-
+- [Extra](#extra)
+  - [Docker](#docker)
+    - [Installation](#installation)
+    - [Utilisation](#utilisation)
 
 
 ## Database
@@ -60,9 +60,9 @@ Sur le même modéle que le dossier `database`.
 Le dossier **src** contient le projet ADF et le dossier **test** contient les fichiers `feature` des tests.
 
 
-
-## Docker
-### Installation
+## Extra
+### Docker
+#### Installation
  1. Oracle 18.3-small :    
  Pour générer l'image docker 18.3, il faut télécharger le fichier *db_home.zip*
 (Oracle Database 18c Standard Edition 2 for Linux x64) disponible sur http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
@@ -70,7 +70,7 @@ Le dossier **src** contient le projet ADF et le dossier **test** contient les fi
 **Il est fortement conseillé de push cette image sur un *Docker Container Repository*.**    
  L'image étant lourde (20.4GB). Il sera plus pratique pour les développeurs de l'utiliser.
 
-### Utilisation
+#### Utilisation
 
 ```shell
 # Lancement
