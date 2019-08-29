@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  oracle:
+    image: ${CI_REGISTRY_IMAGE}:oracle
+    build:
+      cache_from:
+        - ${CI_REGISTRY_IMAGE}:oracle
+    
+
+  java:
+    image: ${CI_REGISTRY_IMAGE}:java
+    build:
+      cache_from:
+        - ${CI_REGISTRY_IMAGE}:java

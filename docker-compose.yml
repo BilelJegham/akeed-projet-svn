@@ -1,0 +1,40 @@
+version: "3.2"
+
+
+
+services:
+  oracle:
+    build:
+      context: ./docker/oracle
+    image: registry.gitlab.com/akeed/akeed-plsql:oracle  
+    volumes:
+      - ./:/home/oracle/akeed/
+    networks:
+      - overlay
+    ports:
+      - "1521:1521"
+    
+  # glassfish:
+  #   depends_on:
+  #     - oracle
+  #   build: ./docker/glassfish
+  #   networks:
+  #     - overlay
+  #   ports:
+  #     - "8080:8080"
+  #     - "4848:4848"
+  #     - "8686:8686"
+  #   volumes:
+  #     - ./application:/home/application
+
+  java:
+    build: 
+      context: ./docker/maven
+    volumes:
+      - ./docker/maven/java:/home/java
+    networks:
+      - overlay
+    
+      
+networks:
+  overlay:

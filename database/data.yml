@@ -1,0 +1,10 @@
+databaseChangeLog:
+    - includeAll:
+        path: src
+    #     path: install/tab
+    #     path: install/seq
+    #     path: install/cst
+    #     path: latest/vw
+    #     path: latest/pkb
+    #     path: latest/trg
+    #     path: latest/vw
