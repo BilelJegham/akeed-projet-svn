@@ -3,7 +3,7 @@ Akeed Projet  <!-- omit in toc -->
 
 > Bilel Jegham <contact.bileljegham@gmail.com>
 
-Ce dépôt contient un squelette pour un projet *OracleXE* et *ADF*.
+Ce dépôt contient un squelette pour un projet *OracleXE* et *OracleADF*.
 
 - [Database](#database)
   - [Composition](#composition)
@@ -78,7 +78,6 @@ docker-compose up
 
 # Arret
 docker-compose down
-
 ```
 
 
